@@ -82,6 +82,7 @@ const PopularCollections = () => {
   );
 
   return (
+
     <div className="container mx-auto px-4 py-8 overflow-hidden">
       <h2 className="text-center text-2xl font-bold mb-6">POPULAR COLLECTIONS</h2>
       
@@ -116,6 +117,7 @@ const PopularCollections = () => {
             </div>
           ))}
         </div>
+
       </div>
     </div>
   );

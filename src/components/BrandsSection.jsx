@@ -6,32 +6,32 @@ const BrandsSection = () => {
   const brands = [
     {
       name: 'BELLE',
-      logo: '/api/placeholder/100/50',
+      logo: 'src/assets/br1.png',
       color: '#FF6B6B'
     },
     {
       name: 'KAMERA',
-      logo: '/api/placeholder/100/50',
+      logo: 'src/assets/br2.png',
       color: '#4ECDC4'
     },
     {
       name: 'FAMIZA',
-      logo: '/api/placeholder/100/50',
+      logo: 'src/assets/br1.png',
       color: '#45B7D1'
     },
     {
       name: 'LITEMART',
-      logo: '/api/placeholder/100/50',
+      logo: 'src/assets/br2.png',
       color: '#96CEB4'
     },
     {
       name: 'BBN',
-      logo: '/api/placeholder/100/50',
+      logo: 'src/assets/br1.png',
       color: '#FF9F1C'
     },
     {
       name: 'O62X',
-      logo: '/api/placeholder/100/50',
+      logo: 'src/assets/br2.png',
       color: '#7868E6'
     }
   ];
@@ -81,6 +81,7 @@ const BrandsSection = () => {
   );
 
   return (
+
     <div className="container mx-auto px-4 py-6 overflow-hidden">
       <h2 className="text-center text-xl font-bold mb-4">BRANDS WE SALE</h2>
       
