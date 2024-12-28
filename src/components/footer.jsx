@@ -85,13 +85,13 @@ const Footer = () => {
             <div className="text-sm text-gray-400">
               © 2024 NexGeek. All Rights Reserved. | eCommerce Software by Shopify
             </div>
-            <div className="flex gap-3">
+            {/* <div className="flex gap-3">
               <img src="/api/placeholder/40/25" alt="Visa" className="h-6" />
               <img src="/api/placeholder/40/25" alt="Mastercard" className="h-6" />
               <img src="/api/placeholder/40/25" alt="American Express" className="h-6" />
               <img src="/api/placeholder/40/25" alt="PayPal" className="h-6" />
               <img src="/api/placeholder/40/25" alt="Apple Pay" className="h-6" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

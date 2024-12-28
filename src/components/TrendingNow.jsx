@@ -35,7 +35,7 @@ const TrendingNow = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-12 ">
       <h2 className="text-center text-3xl font-bold mb-8">TRENDING NOW</h2>
       <div className="flex justify-center space-x-4 mb-8">
         <button className="text-blue-600 font-medium">FEATURED</button>
