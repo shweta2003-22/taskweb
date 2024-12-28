@@ -1,0 +1,104 @@
+/* // src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Base Styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-gray-800 antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+/* Custom Component Styles */
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-orange-500 text-white hover:bg-orange-600;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-800 hover:bg-gray-300;
+  }
+
+  .container {
+    @apply max-w-7xl mx-auto px-4;
+  }
+}
+
+/* Custom Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.5s ease-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
+
+/* Hero Section Styles */
+.hero-overlay {
+  @apply absolute inset-0 bg-black bg-opacity-50;
+}
+
+/* Product Card Styles */
+.product-card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-1;
+}
+
+/* Newsletter Form Styles */
+.newsletter-input {
+  @apply w-full px-4 py-2 rounded-l border focus:outline-none focus:ring-2 focus:ring-orange-500;
+}
+
+/* Brand Logo Styles */
+.brand-logo {
+  @apply grayscale hover:grayscale-0 transition-all duration-300;
+}
