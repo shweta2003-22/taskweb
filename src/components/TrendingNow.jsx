@@ -155,7 +155,7 @@ const TrendingNow = () => {
             onClick={() => setSelectedCategory(category)}
             className={`transform transition-all duration-300 hover:scale-105 ${
               selectedCategory === category
-                ? 'text-blue-600 font-medium'
+                ? 'text-orange-600 font-medium'
                 : 'text-gray-600'
             }`}
           >

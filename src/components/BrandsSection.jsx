@@ -50,19 +50,18 @@ const BrandsSection = () => {
     <div className="group relative p-2 rounded transition-all duration-300 hover:shadow-md bg-white">
       <div className="relative overflow-hidden h-14 flex items-center justify-center">
         <div className="absolute inset-0 flex items-center justify-center transition-transform duration-500 group-hover:-translate-y-full">
-          <span 
-            className="text-sm font-bold"
-            style={{ color: brand.color }}
-          >
-            {brand.name}
-          </span>
+        <img
+            src={brand.logo}
+            alt={brand.name}
+            className="max-h-10 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+          />
         </div>
         
         <div className="absolute inset-0 flex items-center justify-center transform translate-y-full transition-transform duration-500 group-hover:translate-y-0">
           <img
             src={brand.logo}
             alt={brand.name}
-            className="max-h-10 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+            className="max-h-10 object-contain hover:grayscale-0 transition-all duration-300"
           />
         </div>
       </div>
